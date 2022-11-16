@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoviesTableViewCell" rowHeight="467" id="KGk-i7-Jjw" customClass="MoviesTableViewCell" customModule="MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-st-aKX">
+                        <rect key="frame" x="50" y="16" width="220" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="320" id="qkP-Ug-mgy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJo-HP-8Qi">
+                        <rect key="frame" x="50" y="352" width="220" height="88"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Ba-st-aKX" secondAttribute="trailing" constant="50" id="BdM-cx-3oc"/>
+                    <constraint firstItem="6Ba-st-aKX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="X3f-dh-SFZ"/>
+                    <constraint firstItem="ZJo-HP-8Qi" firstAttribute="top" secondItem="6Ba-st-aKX" secondAttribute="bottom" constant="16" id="Xko-Kn-WcP"/>
+                    <constraint firstItem="ZJo-HP-8Qi" firstAttribute="leading" secondItem="6Ba-st-aKX" secondAttribute="leading" id="bom-WI-AnA"/>
+                    <constraint firstItem="ZJo-HP-8Qi" firstAttribute="trailing" secondItem="6Ba-st-aKX" secondAttribute="trailing" id="cRk-ls-5nX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZJo-HP-8Qi" secondAttribute="bottom" constant="16" id="iqD-UM-coQ"/>
+                    <constraint firstItem="6Ba-st-aKX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="zWn-Kg-BhP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="posterImageView" destination="6Ba-st-aKX" id="Pub-ue-2VS"/>
+                <outlet property="titleLabel" destination="ZJo-HP-8Qi" id="0Jl-3u-jTu"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
