@@ -1,0 +1,2 @@
+# CoreData-example
+simple app
